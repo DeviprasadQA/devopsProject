@@ -6,9 +6,9 @@ pipeline{
                 echo 'This is first project in Jenkins'
             }
         }
-        stage('Test'){
+        stage('Docker build'){
             steps{
-                echo 'Testing...'
+                echo 'Here I am building docker image'
             }
         }
         stage('Deploy'){
