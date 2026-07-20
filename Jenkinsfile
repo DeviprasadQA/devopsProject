@@ -11,6 +11,10 @@ pipeline{
                 echo 'Here I am building docker image'
             }
         }
+        stage('Testing Jenkins POLL-SCM'){
+            steps{
+                echo 'Here I am Testing jenkins Poll SCM'
+            }
         stage('Deploy'){
             steps{
                 echo 'Deploying...'
