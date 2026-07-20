@@ -16,6 +16,11 @@ pipeline{
                 echo 'Here I am Testing jenkins Poll SCM'
             }
         }
+        stage('Testing webhook'){
+            steps{
+                echo 'Here I am Testing webhook and build are automatically triggered on service'
+            }
+        }
         stage('Deploy'){
             steps{
                 echo 'Deploying...'
